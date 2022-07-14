@@ -47,7 +47,16 @@ function App() {
         {emails.map((email) => {
           return (
             <li className="email" key={email.id}>
+              <div className="select">
+                <input className="select-checkbox" type="checkbox"></input>
+              </div>
+
+              <div className="star">
+                <input className="star-checkbox" type="checkbox"></input>
+              </div>
+
               <div className="sender">{email.sender}</div>
+              <div className="title">{email.title}</div>
             </li>
           );
         })}
